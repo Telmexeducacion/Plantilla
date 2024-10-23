@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Bienvenido al sitio
+                    Bienvenido al sitio Ejemplo para salvador
                 </div>
 
                 <div class="links">
