@@ -36,4 +36,11 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+     // Personalizar la vista del login
+     public function showLoginForm()
+     {
+         return view('administrador.login'); // Ruta a tu vista personalizada
+     }
+     
 }

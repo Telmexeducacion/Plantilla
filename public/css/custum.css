@@ -1,0 +1,55 @@
+/* Custom Admin CSS */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+.sidebar {
+    background-color: #343a40;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    color: #ffffff;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #343a40;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
