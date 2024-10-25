@@ -184,7 +184,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::is('pages') ? 'active' : '' }}" href="{{ route('menu.paginas') }}">
+                    <a class="nav-link {{ Request::is('pages') ? 'active' : '' }}" href="{{route('paginas')}}">
                         <i class="fas fa-file-alt"></i> Paginas
                     </a>
                 </li>

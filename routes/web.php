@@ -11,13 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'SitioController@welcome');
 
 
 
-//registro: 
+//registro:
 Route::get('/administrador', 'Auth\LoginController@showLoginForm')->name('admin.login');
 Route::post('/administrador/login', 'Auth\LoginController@login')->name('admin.login.submit');
 
@@ -27,9 +25,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+///Rutas para Controlar las paginas y post
+Route::get('/pagina/listas','PaginaController@index')->name('paginas');
+Route::get('/paginas/create', 'PaginaController@create')->name('paginas.create');
+Route::post('/pag', 'PaginaController@store')->name('paginas.store');
+Route::delete('/paginas/{id}', 'PaginaController@destroy')->name('paginas.destroy');
 
-//Rutas para controlar las paginas 
-Route::get('/pages','SitioController@adminIndex')->name('menu.paginas');
+//Mostrar la Pagina
+Route::get('{slug}', 'PaginaController@show')->name('paginas.show');
 
 
 
