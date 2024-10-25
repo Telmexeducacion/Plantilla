@@ -169,7 +169,7 @@
             </div>
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::is('home') ? 'active' : '' }}" href="/home">
+                    <a class="nav-link {{ Request::is('home') ? 'active' : '' }}" href="{{route('home')}}">
                         <i class="fas fa-tachometer-alt"></i> Dashboard
                     </a>
                 </li>
@@ -190,7 +190,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ Request::is('appearance') ? 'active' : '' }}" href="#">
-                        <i class="fas fa-paint-brush"></i> apariencia 
+                        <i class="fas fa-paint-brush"></i> apariencia
                     </a>
                 </li>
                 <li class="nav-item">
@@ -211,9 +211,9 @@
 
                 <!-- Logout -->
                 <li class="nav-item nav-item-logout">
-                    <a class="nav-link" href="{{ route('logout') }}" 
+                    <a class="nav-link" href="{{ route('logout') }}"
                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                        <i class="fas fa-sign-out-alt"></i> Salir 
+                        <i class="fas fa-sign-out-alt"></i> Salir
                     </a>
 
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
