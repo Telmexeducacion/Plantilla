@@ -15,6 +15,7 @@
                 <th>Tipo</th>
                 <th>Estatus</th>
                 <th>Acciones</th>
+                <th>Ver</th>
             </tr>
         </thead>
         <tbody>
@@ -39,6 +40,9 @@
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
                         </form>
+                    </td>
+                    <td>
+                        <a href="{{route('paginas.show',$pagina->slug)}}"> Visitar</a>
                     </td>
                 </tr>
             @endforeach
