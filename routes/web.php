@@ -31,6 +31,13 @@ Route::get('/paginas/create', 'PaginaController@create')->name('paginas.create')
 Route::post('/pag', 'PaginaController@store')->name('paginas.store');
 Route::delete('/paginas/{id}', 'PaginaController@destroy')->name('paginas.destroy');
 
+
+
+
+///Administracion de usuarios
+Route::get('/controlUsuarios','UsuariosController@index')->name('panel.usuarios');
+
+
 //Mostrar la Pagina
 Route::get('{slug}', 'PaginaController@show')->name('paginas.show');
 

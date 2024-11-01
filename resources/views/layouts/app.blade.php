@@ -199,7 +199,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::is('users') ? 'active' : '' }}" href="#">
+                    <a class="nav-link {{ Request::is('users') ? 'active' : '' }}" href="{{route('panel.usuarios')}}">
                         <i class="fas fa-users"></i> Usuarios
                     </a>
                 </li>
